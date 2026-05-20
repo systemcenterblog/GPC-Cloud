@@ -1,0 +1,33 @@
+{
+  "RegistryPolicies": {
+    "HKLM:\\Software\\Policies\\Microsoft\\Windows\\System": {
+      "DisableThumbsDB": {
+        "Value": 1,
+        "Type": "DWord"
+      },
+      "LocalAccountTokenFilterPolicy": {
+        "Value": 0,
+        "Type": "DWord"
+      }
+    },
+    "HKLM:\\Software\\Policies\\Microsoft\\Windows\\PowerShell": {
+      "ExecutionPolicy": {
+        "Value": "RemoteSigned",
+        "Type": "String"
+      }
+    },
+    "HKLM:\\Software\\Policies\\Microsoft\\Windows Defender\\Real-Time Protection": {
+      "DisableRealtimeMonitoring": {
+        "Value": 0,
+        "Type": "DWord"
+      }
+    }
+  },
+  "ADMXPolicies": {
+    "EnableUAC": 1,
+    "DisableAutoRun": 255,
+    "EnableWindowsDefender": 0,
+    "EnableFirewall": 1
+  },
+  "AppLockerRules": "<?xml version=\"1.0\" encoding=\"utf-8\"?><AppLockerPolicy Version=\"1\"><RuleCollection Type=\"Exe\" EnforcementMode=\"AuditOnly\"><FilePublisherRule Id=\"921cc481-6e17-4653-8f75-050b76c3467b\" Name=\"(Default Rule) All signed Microsoft executables\" Description=\"This default rule permits the running of any application published by Microsoft.\" UserOrGroupSid=\"S-1-1-0\" Action=\"Allow\"><Conditions><FilePublisherCondition PublisherName=\"O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US\" ProductName=\"*\" BinaryName=\"*\"><BinaryVersionRange LowSection=\"*\" HighSection=\"*\" /></FilePublisherCondition></Conditions><Exceptions></Exceptions></FilePublisherRule><FilePublisherRule Id=\"fd686d83-a829-4601-85d7-e37519979699\" Name=\"(Default Rule) All signed Windows Installer packages\" Description=\"This default rule permits the running of any Windows Installer packages from a signed publisher.\" UserOrGroupSid=\"S-1-1-0\" Action=\"Allow\"><Conditions><FilePublisherCondition PublisherName=\"O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US\" ProductName=\"Windows Installer\" BinaryName=\"*\"><BinaryVersionRange LowSection=\"*\" HighSection=\"*\" /></FilePublisherCondition></Conditions><Exceptions></Exceptions></FilePublisherRule><FilePublisherRule Id=\"6d04b066-ce89-4d97-a27b-6b703b3e5918\" Name=\"(Default Rule) All signed scripts\" Description=\"This default rule permits the running of any scripts that are signed by a publisher.\" UserOrGroupSid=\"S-1-1-0\" Action=\"Allow\"><Conditions><FilePublisherCondition PublisherName=\"*\" ProductName=\"*\" BinaryName=\"*\"><BinaryVersionRange LowSection=\"*\" HighSection=\"*\" /></FilePublisherCondition></Conditions><Exceptions></Exceptions></FilePublisherRule><FileHashRule Id=\"3d57af4d-c30b-4618-bccb-76e7f664cb91\" Name=\"(Default Rule) All files located in the Windows folder\" Description=\"This default rule permits the running of any application that is located in the Windows folder.\" UserOrGroupSid=\"S-1-1-0\" Action=\"Allow\"><Conditions><FileHashCondition><FileHash Type=\"SHA1\" Data=\"E469ECA9556989CFC2560BD3BED8B2D3\" SourceFileName=\"*\" SourceFileLength=\"*\" /></FileHashCondition></Conditions><Exceptions></Exceptions></FileHashRule><FilePathRule Id=\"921cc481-6e17-4653-8f75-050b76c3467c\" Name=\"Allow Program Files\" Description=\"Allows execution of applications in Program Files\" UserOrGroupSid=\"S-1-1-0\" Action=\"Allow\"><Conditions><FilePathCondition Path=\"C:\\Program Files\\*\" /></Conditions><Exceptions></Exceptions></FilePathRule></RuleCollection><RuleCollection Type=\"Dll\" EnforcementMode=\"AuditOnly\"><FilePublisherRule Id=\"921cc481-6e17-4653-8f75-050b76c3467d\" Name=\"(Default Rule) All signed DLLs\" Description=\"This default rule permits the running of any DLLs that are signed by a publisher.\" UserOrGroupSid=\"S-1-1-0\" Action=\"Allow\"><Conditions><FilePublisherCondition PublisherName=\"*\" ProductName=\"*\" BinaryName=\"*\"><BinaryVersionRange LowSection=\"*\" HighSection=\"*\" /></FilePublisherCondition></Conditions><Exceptions></Exceptions></FilePublisherRule></RuleCollection><RuleCollection Type=\"Script\" EnforcementMode=\"AuditOnly\"><FilePublisherRule Id=\"921cc481-6e17-4653-8f75-050b76c3467e\" Name=\"(Default Rule) All signed scripts\" Description=\"This default rule permits the running of any scripts that are signed by a publisher.\" UserOrGroupSid=\"S-1-1-0\" Action=\"Allow\"><Conditions><FilePublisherCondition PublisherName=\"*\" ProductName=\"*\" BinaryName=\"*\"><BinaryVersionRange LowSection=\"*\" HighSection=\"*\" /></FilePublisherCondition></Conditions><Exceptions></Exceptions></FilePublisherRule></RuleCollection></AppLockerPolicy>"
+}

@@ -1,0 +1,14 @@
+{
+  "ADMXPolicies": {
+    "EnableUAC": 1,
+    "DisableAutoRun": 255,
+    "DisableCommandPrompt": 1,
+    "DisableRegistryEdit": 1,
+    "RestrictRemoteDesktop": 1,
+    "EnableWindowsDefender": 0,
+    "EnableFirewall": 1,
+    "DisableWindowsUpdate": 0,
+    "RestrictPowerShellExecution": 0,
+    "DisableUSBStorage": 4
+  }
+}

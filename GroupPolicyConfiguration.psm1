@@ -16,5 +16,7 @@ Export-ModuleMember -Function @(
     'Set-GroupPolicyConfiguration',
     'Set-WindowsDefender',
     'Set-WindowsFirewall',
-    'Set-WindowsFeatures'
+    'Set-WindowsFeatures',
+    'Set-AppLockerRules',
+    'Set-ADMXPolicies'
 )
