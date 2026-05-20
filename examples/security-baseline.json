@@ -1,0 +1,24 @@
+{
+  "HKLM:\\Software\\Policies\\Microsoft\\Windows\\System": {
+    "DisableThumbsDB": {
+      "Value": 1,
+      "Type": "DWord"
+    },
+    "LocalAccountTokenFilterPolicy": {
+      "Value": 0,
+      "Type": "DWord"
+    }
+  },
+  "HKLM:\\Software\\Policies\\Microsoft\\Windows\\PowerShell": {
+    "ExecutionPolicy": {
+      "Value": "RemoteSigned",
+      "Type": "String"
+    }
+  },
+  "HKLM:\\Software\\Policies\\Microsoft\\Windows Defender\\Real-Time Protection": {
+    "DisableRealtimeMonitoring": {
+      "Value": 0,
+      "Type": "DWord"
+    }
+  }
+}
