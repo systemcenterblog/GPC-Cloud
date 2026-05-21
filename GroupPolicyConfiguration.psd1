@@ -6,6 +6,7 @@
     Description = 'Standalone module for Group Policy configuration, AppLocker rules, and ADMX policies with JSON file support'
     PowerShellVersion = '5.1'
     FunctionsToExport = @(
+        'Get-ADMXAppLockerSettings',
         'Set-GroupPolicyConfiguration',
         'Set-WindowsDefender',
         'Set-WindowsFirewall',

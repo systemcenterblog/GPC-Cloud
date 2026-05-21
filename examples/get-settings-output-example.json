@@ -1,0 +1,15 @@
+{
+  "ADMXPolicies": {
+    "EnableUAC": 1,
+    "DisableAutoRun": 255,
+    "DisableCommandPrompt": 0,
+    "DisableRegistryEdit": 0,
+    "RestrictRemoteDesktop": 0,
+    "EnableWindowsDefender": 1,
+    "EnableFirewall": 1,
+    "DisableWindowsUpdate": 0,
+    "RestrictPowerShellExecution": 0,
+    "DisableUSBStorage": 3
+  },
+  "AppLockerRules": "<?xml version=\"1.0\" encoding=\"utf-8\"?><AppLockerPolicy Version=\"1\" SchemaVersion=\"1.0\"><RuleCollection Type=\"Exe\" EnforcementMode=\"NotConfigured\"><FilePublisherRule Id=\"\" Name=\"\" Description=\"\" UserOrGroupSid=\"\" Action=\"\" /><FilePathRule Id=\"\" Name=\"\" Description=\"\" UserOrGroupSid=\"\" Action=\"\" /><FileHashRule Id=\"\" Name=\"\" Description=\"\" UserOrGroupSid=\"\" Action=\"\" /><NetworkShareRule Id=\"\" Name=\"\" Description=\"\" UserOrGroupSid=\"\" Action=\"\" /></RuleCollection><RuleCollection Type=\"Dll\" EnforcementMode=\"NotConfigured\" /><RuleCollection Type=\"Script\" EnforcementMode=\"NotConfigured\" /><RuleCollection Type=\"Appx\" EnforcementMode=\"NotConfigured\" /><RuleCollection Type=\"Msi\" EnforcementMode=\"NotConfigured\" /></AppLockerPolicy>"
+}

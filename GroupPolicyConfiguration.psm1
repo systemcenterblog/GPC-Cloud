@@ -13,6 +13,7 @@ Get-ChildItem -Path "$PSScriptRoot\public\*.ps1" -ErrorAction SilentlyContinue |
 
 # Export functions
 Export-ModuleMember -Function @(
+    'Get-ADMXAppLockerSettings',
     'Set-GroupPolicyConfiguration',
     'Set-WindowsDefender',
     'Set-WindowsFirewall',

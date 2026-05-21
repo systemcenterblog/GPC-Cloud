@@ -15,6 +15,24 @@ A standalone PowerShell module for applying Windows group policy settings, AppLo
 
 ## Commands
 
+### Get-ADMXAppLockerSettings
+Retrieves current ADMX policies and AppLocker rules from the local computer and optionally exports to JSON.
+
+```powershell
+# Get current settings and return as object
+$settings = Get-ADMXAppLockerSettings
+$settings.ADMXPolicies
+
+# Get settings and save to JSON file
+Get-ADMXAppLockerSettings -OutputPath 'C:\policies\current-settings.json'
+
+# Get only AppLocker rules
+$appLockerOnly = Get-ADMXAppLockerSettings -IncludeADMX $false
+
+# Get ADMX and registry policies (exclude AppLocker)
+$settings = Get-ADMXAppLockerSettings -IncludeAppLocker $false -IncludeRegistry $true
+```
+
 ### Set-GroupPolicyConfiguration
 Applies group policy settings, AppLocker rules, and ADMX policies from hashtable or JSON file.
 
@@ -121,6 +139,8 @@ Create policy files with this comprehensive structure:
 
 ## Features
 
+- ✅ Retrieve current ADMX and AppLocker settings from local computer
+- ✅ Export settings to JSON for backup or replication
 - ✅ JSON-based policy configuration
 - ✅ AppLocker rule support (XML format)
 - ✅ ADMX policy support
@@ -135,6 +155,7 @@ Create policy files with this comprehensive structure:
 ## Examples
 
 See the `examples/` folder for complete examples:
+- `get-settings-output-example.json` - Example output from Get-ADMXAppLockerSettings
 - `unified-policies-example.json` - Registry + ADMX + AppLocker
 - `admx-policies-example.json` - ADMX policies only
 - `applocker-rules-example.json` - AppLocker rules only

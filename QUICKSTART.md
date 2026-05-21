@@ -10,6 +10,25 @@ Copy-Item -Path "C:\GroupPolicyConfiguration" -Destination "$PROFILE\..\Modules\
 Import-Module "C:\GroupPolicyConfiguration\GroupPolicyConfiguration.psd1"
 ```
 
+## Backup Current Settings (Recommended First Step)
+
+Before applying policies, backup your current settings:
+
+```powershell
+# Export all current settings to JSON
+Get-ADMXAppLockerSettings -OutputPath 'C:\policies\backup-$(Get-Date -f yyyyMMdd-HHmmss).json'
+
+# Get current ADMX policies only
+$admxOnly = Get-ADMXAppLockerSettings -IncludeAppLocker $false
+
+# Get current AppLocker rules only
+$appLockerOnly = Get-ADMXAppLockerSettings -IncludeADMX $false
+
+# Get settings and display ADMX policies
+$settings = Get-ADMXAppLockerSettings
+$settings.ADMXPolicies | Format-Table
+```
+
 ## Basic Usage (5 minutes)
 
 ### 1. Apply Group Policy from JSON (Registry only)
@@ -243,6 +262,7 @@ This uses `reg.exe` instead of PowerShell provider for WinPE environments.
 Get detailed help for any command:
 
 ```powershell
+Get-Help Get-ADMXAppLockerSettings -Full
 Get-Help Set-GroupPolicyConfiguration -Full
 Get-Help Set-AppLockerRules -Full
 Get-Help Set-ADMXPolicies -Full
