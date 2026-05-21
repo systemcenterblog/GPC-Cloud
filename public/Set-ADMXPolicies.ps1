@@ -16,57 +16,123 @@ function Set-ADMXPolicies {
     This is a subset of common ADMX policies. More can be added as needed.
     #>
     $ADMXRegistry = @{
-        'EnableUAC' = @{
-            'Path' = 'HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\System'
-            'Name' = 'EnableLUA'
-            'Type' = 'DWord'
-        }
-        'DisableAutoRun' = @{
-            'Path' = 'HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer'
-            'Name' = 'NoDriveTypeAutoRun'
-            'Type' = 'DWord'
-        }
-        'DisableCommandPrompt' = @{
-            'Path' = 'HKLM:\Software\Policies\Microsoft\Windows\System'
-            'Name' = 'DisableCMD'
-            'Type' = 'DWord'
-        }
-        'DisableRegistryEdit' = @{
-            'Path' = 'HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\System'
-            'Name' = 'DisableRegistryTools'
-            'Type' = 'DWord'
-        }
-        'RestrictRemoteDesktop' = @{
-            'Path' = 'HKLM:\Software\Policies\Microsoft\Windows NT\Terminal Services'
-            'Name' = 'fDenyTSConnections'
-            'Type' = 'DWord'
-        }
-        'EnableWindowsDefender' = @{
-            'Path' = 'HKLM:\Software\Policies\Microsoft\Windows Defender'
-            'Name' = 'DisableAntiSpyware'
-            'Type' = 'DWord'
-        }
-        'EnableFirewall' = @{
-            'Path' = 'HKLM:\Software\Policies\Microsoft\WindowsFirewall\DomainProfile'
-            'Name' = 'EnableFirewall'
-            'Type' = 'DWord'
-        }
-        'DisableWindowsUpdate' = @{
-            'Path' = 'HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate\AU'
-            'Name' = 'NoAutoUpdate'
-            'Type' = 'DWord'
-        }
-        'RestrictPowerShellExecution' = @{
-            'Path' = 'HKLM:\Software\Policies\Microsoft\Windows\PowerShell'
-            'Name' = 'EnableScripts'
-            'Type' = 'DWord'
-        }
-        'DisableUSBStorage' = @{
-            'Path' = 'HKLM:\System\CurrentControlSet\Services\USBSTOR'
-            'Name' = 'Start'
-            'Type' = 'DWord'
-        }
+    
+    # Control Panel Restrictions
+    'ProhibitControlPanel' = @{
+        'Path' = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer'
+        'Name' = 'NoControlPanel'
+        'Type' = 'DWord'
     }
+
+    'ShowOnlySpecifiedControlPanelItems' = @{
+        'Path' = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer'
+        'Name' = 'RestrictCpl'
+        'Type' = 'DWord'
+    }
+
+    # Desktop Restrictions
+    'HideDesktopIcons' = @{
+        'Path' = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer'
+        'Name' = 'NoDesktop'
+        'Type' = 'DWord'
+    }
+
+    # Wallpaper Enforcement
+    'SetDesktopWallpaper' = @{
+        'Path' = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\ActiveDesktop'
+        'Name' = 'Wallpaper'
+        'Type' = 'String'
+    }
+
+    'WallpaperStyle' = @{
+        'Path' = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\ActiveDesktop'
+        'Name' = 'WallpaperStyle'
+        'Type' = 'String'
+    }
+
+    # Disable Context Menu
+    'DisableContextMenu' = @{
+        'Path' = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer'
+        'Name' = 'NoViewContextMenu'
+        'Type' = 'DWord'
+    }
+
+    # Ctrl+Alt+Del Options
+    'RemoveLockComputer' = @{
+        'Path' = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\System'
+        'Name' = 'DisableLockWorkstation'
+        'Type' = 'DWord'
+    }
+
+    # Attachment Manager
+    'LowRiskFileTypes' = @{
+        'Path' = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Associations'
+        'Name' = 'LowRiskFileTypes'
+        'Type' = 'String'
+    }
+
+    # Screen Saver
+    'EnableScreenSaver' = @{
+        'Path' = 'HKCU:\Software\Policies\Microsoft\Windows\Control Panel\Desktop'
+        'Name' = 'ScreenSaveActive'
+        'Type' = 'String'
+    }
+
+    'ForceScreenSaver' = @{
+        'Path' = 'HKCU:\Software\Policies\Microsoft\Windows\Control Panel\Desktop'
+        'Name' = 'SCRNSAVE.EXE'
+        'Type' = 'String'
+    }
+
+    # Office Sign-in restriction (modern Office ADMX)
+    'BlockOfficeSignIn' = @{
+        'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Common\SignIn'
+        'Name' = 'SignInOptions'
+        'Type' = 'DWord'
+    }
+
+    # OneDrive prompt
+    'DisableOneDriveSignInPrompt' = @{
+        'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Common\General'
+        'Name' = 'ShownFirstRunOptin'
+        'Type' = 'DWord'
+    }
+
+    # Word AutoRecover location
+    'WordAutoRecoverLocation' = @{
+        'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\Options'
+        'Name' = 'AutoRecover Path'
+        'Type' = 'String'
+    }
+
+    # Word Start screen
+    'DisableWordStartScreen' = @{
+        'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\Options'
+        'Name' = 'DisableBootToOfficeStart'
+        'Type' = 'DWord'
+    }
+
+    # Word AutoCorrect / Proofing examples
+    'DisableAutoCorrectReplaceText' = @{
+        'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\Options\Proofing'
+        'Name' = 'AutoFormatReplaceText'
+        'Type' = 'DWord'
+    }
+
+    'DisableAutoBulletLists' = @{
+        'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\Options\Proofing'
+        'Name' = 'AutoFormatApplyBulletedLists'
+        'Type' = 'DWord'
+    }
+
+    'DisableAutoNumberLists' = @{
+        'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\Options\Proofing'
+        'Name' = 'AutoFormatApplyNumberedLists'
+        'Type' = 'DWord'
+    }
+
+}
+
 
     if (-not $PolicySettings -or $PolicySettings.Count -eq 0) {
         Write-Warning "[$(Get-Date -format s)] [$($MyInvocation.MyCommand.Name)] No ADMX policies provided"

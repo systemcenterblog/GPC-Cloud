@@ -1,22 +1,70 @@
 {
-  "HKLM:\\Software\\Policies\\Microsoft\\Windows\\System": {
-    "DisableThumbsDB": {
+  "HKCU:\\Software\\Policies\\Microsoft\\Office\\16.0\\Word\\Options": {
+    "DisableAutoCorrectReplaceText": {
       "Value": 1,
       "Type": "DWord"
     },
-    "LocalAccountTokenFilterPolicy": {
+    "DisableCapitaliseFirstLetter": {
+      "Value": 1,
+      "Type": "DWord"
+    },
+    "DisableCapitaliseDays": {
+      "Value": 1,
+      "Type": "DWord"
+    },
+    "DisableCapsLockCorrection": {
+      "Value": 1,
+      "Type": "DWord"
+    },
+    "DisableKeyboardCorrection": {
+      "Value": 1,
+      "Type": "DWord"
+    },
+    "DisableTwoInitialCaps": {
+      "Value": 1,
+      "Type": "DWord"
+    }
+  },
+
+  "HKCU:\\Software\\Policies\\Microsoft\\Office\\16.0\\Word\\AutoFormat": {
+    "AutoFormatAsYouTypeApplyBullets": {
+      "Value": 0,
+      "Type": "DWord"
+    },
+    "AutoFormatAsYouTypeApplyNumberedLists": {
+      "Value": 0,
+      "Type": "DWord"
+    },
+    "AutoFormatAsYouTypeDefineStyles": {
       "Value": 0,
       "Type": "DWord"
     }
   },
-  "HKLM:\\Software\\Policies\\Microsoft\\Windows\\PowerShell": {
-    "ExecutionPolicy": {
-      "Value": "RemoteSigned",
+
+  "HKCU:\\Software\\Policies\\Microsoft\\Office\\16.0\\Word\\Save": {
+    "AutoRecoverPath": {
+      "Value": "%userprofile%\\Downloads",
       "Type": "String"
+    },
+    "AutoRecoverInterval": {
+      "Value": 5,
+      "Type": "DWord"
+    },
+    "KeepLastAutoSavedVersion": {
+      "Value": 1,
+      "Type": "DWord"
     }
   },
-  "HKLM:\\Software\\Policies\\Microsoft\\Windows Defender\\Real-Time Protection": {
-    "DisableRealtimeMonitoring": {
+
+  "HKCU:\\Software\\Policies\\Microsoft\\Office\\16.0\\Common\\SignIn": {
+    "SignInOptions": {
+      "Value": 3,
+      "Type": "DWord"
+    }
+  },
+
+  "HKCU:\\Software\\Policies\\Microsoft\\Office\\16.0\\Common\\Internet": {
+    "UseOnlineContent": {
       "Value": 0,
       "Type": "DWord"
     }
