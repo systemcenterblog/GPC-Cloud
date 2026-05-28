@@ -359,6 +359,34 @@ function Set-ADMXPolicies {
     'Name' = 'KeyMod5'
     'Type' = 'String'   # REG_SZ
 }
+#Printer Connections (example of multi-value policy with subkeys)
+'PrintersConnections__printdir_kprn015793_GuidPrinter' = @{
+    'Path' = 'HKCU:\Printers\Connections\,,printdir,kprn015793'
+    'Name' = 'GuidPrinter'
+    'Type' = 'String'   # REG_SZ
+    'Value' = '{26371990-41CD-415B-8872-DC4FF4145F76}'
+}
+
+'PrintersConnections__printdir_kprn015793_Server' = @{
+    'Path' = 'HKCU:\Printers\Connections\,,printdir,kprn015793'
+    'Name' = 'Server'
+    'Type' = 'String'   # REG_SZ
+    'Value' = '\\printdir'
+}
+
+'PrintersConnections__printdir_kprn015793_Provider' = @{
+    'Path' = 'HKCU:\Printers\Connections\,,printdir,kprn015793'
+    'Name' = 'Provider'
+    'Type' = 'String'   # REG_SZ
+    'Value' = 'win32spl.dll'
+}
+
+'PrintersConnections__printdir_kprn015793_LocalConnection' = @{
+    'Path' = 'HKCU:\Printers\Connections\,,printdir,kprn015793'
+    'Name' = 'LocalConnection'
+    'Type' = 'DWord'    # REG_DWORD
+    'Value' = 1
+}
 
 }
 
