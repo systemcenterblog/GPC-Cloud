@@ -131,6 +131,235 @@ function Set-ADMXPolicies {
         'Type' = 'DWord'
     }
 
+    # Word - Disabled CommandBar Items List (flattened TCIDs)
+'WordDisabledCmdBar_TCID1' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID1'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID2' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID2'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID3' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID3'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID4' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID4'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID5' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID5'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID6' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID6'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID7' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID7'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID8' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID8'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID9' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID9'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID10' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID10'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID11' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID11'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID12' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID12'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID13' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID13'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID14' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID14'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID15' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID15'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID16' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID16'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID17' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID17'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID18' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID18'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID19' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID19'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID20' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID20'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID21' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID21'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID22' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID22'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID23' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID23'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID24' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID24'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID25' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID25'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID26' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID26'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID27' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID27'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID28' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID28'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID29' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID29'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID30' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID30'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID31' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID31'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID32' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID32'
+    'Type' = 'String'
+}
+
+'WordDisabledCmdBar_TCID33' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledCmdBarItemsList'
+    'Name' = 'TCID33'
+    'Type' = 'String'
+}
+# Word - Disabled Shortcut Keys List
+'WordDisabledShortcutKeys_KeyMod1' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledShortcutKeysList'
+    'Name' = 'KeyMod1'
+    'Type' = 'String'   # REG_SZ
+}
+
+'WordDisabledShortcutKeys_KeyMod2' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledShortcutKeysList'
+    'Name' = 'KeyMod2'
+    'Type' = 'String'   # REG_SZ
+}
+
+'WordDisabledShortcutKeys_KeyMod3' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledShortcutKeysList'
+    'Name' = 'KeyMod3'
+    'Type' = 'String'   # REG_SZ
+}
+
+'WordDisabledShortcutKeys_KeyMod4' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledShortcutKeysList'
+    'Name' = 'KeyMod4'
+    'Type' = 'String'   # REG_SZ
+}
+
+'WordDisabledShortcutKeys_KeyMod5' = @{
+    'Path' = 'HKCU:\Software\Policies\Microsoft\Office\16.0\Word\DisabledShortcutKeysList'
+    'Name' = 'KeyMod5'
+    'Type' = 'String'   # REG_SZ
+}
+
 }
 
 
